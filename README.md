@@ -1,3 +1,3 @@
 # Application Description
-* UI for managing notification message
-* Support on Twilio, Firebase, Gmail
+* Send sms to mobile phone by posting to rest api.
+* Support on Twilio, WaveCell, Nexmo.
