@@ -1,6 +1,9 @@
 package com.notification;
 
+import com.notification.nexmo.NexmoComponent;
 import com.notification.twilio.TwilioComponent;
+import com.notification.wavecell.WaveCellComponent;
+
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,8 +17,8 @@ public class NotificationApplication {
 	}
 
 	@Bean
-	ApplicationRunner runner(TwilioComponent twilioComponent) {
-		return args -> twilioComponent.sendSMS("+84965019428", "AAAAA");
+	ApplicationRunner runner(TwilioComponent twilioComponent, WaveCellComponent waveCellComponent, NexmoComponent nexmoComponent) {
+		return args -> nexmoComponent.sendSMS("+84965019428", "AAAAAB");
 	}
 
 }
