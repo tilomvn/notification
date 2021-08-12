@@ -17,9 +17,9 @@ public class NexmoComponent extends MessageSender {
 
     //Still can not verify phone number ???
     //https://dashboard.nexmo.com/user/activation/verify
-    private final String VONAGE_API_KEY = "";
-    private final String VONAGE_API_SECRET = "";
-    private final String VONAGE_BRAND_NAME = "";
+    private final String VONAGE_API_KEY = "a3bcdf99";
+    private final String VONAGE_API_SECRET = "ZXIcAhxbKTSUVzj3";
+    private final String VONAGE_BRAND_NAME = "Vonage APIs";
 
     @Override
     public void sendSMS(String toTarget, String body) {

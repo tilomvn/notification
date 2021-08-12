@@ -18,7 +18,7 @@ public class NotificationApplication {
 
 	@Bean
 	ApplicationRunner runner(TwilioComponent twilioComponent, WaveCellComponent waveCellComponent, NexmoComponent nexmoComponent) {
-		return args -> nexmoComponent.sendSMS("+84965019428", "AAAAAB");
+		return args -> nexmoComponent.sendSMS("84965019428", "AAAAAB");
 	}
 
 }
