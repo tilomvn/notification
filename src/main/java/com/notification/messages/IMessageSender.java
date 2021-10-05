@@ -1,6 +1,6 @@
-package com.notification;
+package com.notification.messages;
 
-public interface IMessageSender {
+interface IMessageSender {
 
     void sendSMS(String fromTarget, String toTarget, String body);
 

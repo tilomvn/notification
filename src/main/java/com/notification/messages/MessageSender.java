@@ -1,4 +1,4 @@
-package com.notification;
+package com.notification.messages;
 
 public abstract class MessageSender implements IMessageSender {
 

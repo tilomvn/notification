@@ -1,13 +1,12 @@
 package com.notification.nexmo;
 
+import com.notification.messages.MessageSender;
 import com.vonage.client.VonageClient;
 import com.vonage.client.sms.MessageStatus;
 import com.vonage.client.sms.SmsSubmissionResponse;
 import com.vonage.client.sms.messages.TextMessage;
 
 import org.springframework.stereotype.Component;
-
-import com.notification.MessageSender;
 
 /**
  * Visit Nexmo site to register authorization info.
@@ -17,9 +16,9 @@ public class NexmoComponent extends MessageSender {
 
     //Still can not verify phone number ???
     //https://dashboard.nexmo.com/user/activation/verify
-    private final String VONAGE_API_KEY = "a3bcdf99";
-    private final String VONAGE_API_SECRET = "ZXIcAhxbKTSUVzj3";
-    private final String VONAGE_BRAND_NAME = "Vonage APIs";
+    final String VONAGE_API_KEY = "a3bcdf99";
+    final String VONAGE_API_SECRET = "ZXIcAhxbKTSUVzj3";
+    final String VONAGE_BRAND_NAME = "Vonage APIs";
 
     @Override
     public void sendSMS(String toTarget, String body) {

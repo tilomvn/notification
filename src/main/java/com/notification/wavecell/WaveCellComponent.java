@@ -3,14 +3,15 @@ package com.notification.wavecell;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.notification.MessageSender;
-
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
+
+import com.notification.messages.MessageSender;
+
 import org.springframework.stereotype.Component;
 
 /**
@@ -19,10 +20,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class WaveCellComponent extends MessageSender {
 
-    private final String MY_NUMBER = "+84965019428";
-    private final String SUB_ACCOUNT_ID = "SMSNotification_5kK14_hq";
-    private final String AUTH_TOKEN = "L0MTGD1JFuN4qikcZbgVtYgNjDCJ1zuSVKuNiY";
-    private final String api = "https://sms.8x8.com/api/v1/subaccounts/" + SUB_ACCOUNT_ID + "/messages";
+    final String MY_NUMBER = "+84965019428";
+    final String SUB_ACCOUNT_ID = "SMSNotification_5kK14_hq";
+    final String AUTH_TOKEN = "L0MTGD1JFuN4qikcZbgVtYgNjDCJ1zuSVKuNiY";
+    final String api = "https://sms.8x8.com/api/v1/subaccounts/" + SUB_ACCOUNT_ID + "/messages";
 
     final RestTemplate restTemplate;
 
